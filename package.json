@@ -1,0 +1,24 @@
+{
+  "name": "rapleaf",
+  "version": "0.0.0",
+  "description": "rapleaf client",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha -R spec"
+  },
+  "keywords": [
+    "rapleaf",
+    "client"
+  ],
+  "author": "Preston Pham",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.26.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  }
+}
