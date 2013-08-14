@@ -1,6 +1,6 @@
 {
   "name": "rapleaf",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "rapleaf client",
   "main": "index.js",
   "directories": {
@@ -19,6 +19,11 @@
     "request": "~2.26.0"
   },
   "devDependencies": {
-    "mocha": "~1.12.0"
+    "mocha": "~1.12.0",
+    "nock": "~0.22.1"
+  },
+  "repository": { 
+    "type" : "git"
+  , "url" : "git@github.com:goodybag/rapleaf-wrapper.git"
   }
 }

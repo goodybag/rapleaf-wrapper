@@ -18,8 +18,8 @@ Just a thin request wrapper for rapleaf
         return;
       }
 
-      console.log('Response:', response);
-      console.log('Body:', body);
+      console.log('Response:', response); // HTTP response in JSON
+      console.log('Body:', body); // { age: '35-44', gender: 'Male' }
     });
 
 #### API
@@ -44,8 +44,6 @@ Create a new Rapleaf client
  * callback - function(error, response, body)
 
 #### Test
-
-Using mocha
 
     npm test
 

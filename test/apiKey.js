@@ -38,5 +38,3 @@ describe('rapleaf api key', function() {
     });
   });
 });
-
-
