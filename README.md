@@ -38,13 +38,13 @@ Create a new Rapleaf client
 
 #### queryByMd5(md5, callback)
 
- * md5 - string
- * callback - function(error, response, body)
+  * md5 - string
+  * callback - function(error, response, body)
 
 #### queryBySha1(sha1, callback)
 
- * sha1 - string
- * callback - function(error, response, body)
+  * sha1 - string
+  * callback - function(error, response, body)
 
 Test
 ----
