@@ -31,19 +31,22 @@ API
 
 Create a new Rapleaf client
 
-#### queryByEmail(email, callback)
+#### queryByEmail(email, [postal], callback)
 
   * email - string
+  * postal - optional hash of postal parameters such as first, last name, zip
   * callback - function(error, response, body)
 
-#### queryByMd5(md5, callback)
+#### queryByMd5(md5, [postal], callback)
 
   * md5 - string
+  * postal - optional hash of postal parameters such as first, last name, zip
   * callback - function(error, response, body)
 
-#### queryBySha1(sha1, callback)
+#### queryBySha1(sha1, [postal], callback)
 
   * sha1 - string
+  * postal - optional hash of postal parameters such as first, last name, zip
   * callback - function(error, response, body)
 
 Test
