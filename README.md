@@ -18,6 +18,18 @@ Usage
         console.log(body); // { age: '35-44', gender: 'Male' }
       }
     });
+    
+    // Narrow results by providing 'postal' or 'optional' parameters inside of an options object
+    var options = {
+      first: 'John'
+    , last: 'Doe'
+    , show_available: true
+    };
+    client.queryByEmail('john.doe@hotmail.com', options, function(error, response, body) {
+      if (!error) {
+        console.log(body); // { age: '35-44', gender: 'Male' }
+      }
+    });
 
 API
 ---
@@ -31,22 +43,22 @@ API
 
 Create a new Rapleaf client
 
-#### queryByEmail(email, [postal], callback)
+#### queryByEmail(email, [options], callback)
 
   * email - string
-  * postal - optional hash of postal parameters such as first, last name, zip
+  * options - object (postal or optional parameters such as first, last name, zip)
   * callback - function(error, response, body)
 
-#### queryByMd5(md5, [postal], callback)
+#### queryByMd5(md5, [options], callback)
 
   * md5 - string
-  * postal - optional hash of postal parameters such as first, last name, zip
+  * options - object
   * callback - function(error, response, body)
 
 #### queryBySha1(sha1, [postal], callback)
 
   * sha1 - string
-  * postal - optional hash of postal parameters such as first, last name, zip
+  * options - object
   * callback - function(error, response, body)
 
 Test
