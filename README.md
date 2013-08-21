@@ -35,9 +35,9 @@ API
 ---
 
 * [new Rapleaf(apiKey)](#new-rapleafapikey)
-* [queryByEmail(email, callback)](#querybyemailemail-callback)
-* [queryByMd5(md5, callback)](#querybymd5md5-callback)
-* [queryBySha1(sha1, callback)](#querybysha1sha1-callback)
+* [queryByEmail(email, [options], callback)](#querybyemailemail-callback)
+* [queryByMd5(md5, [options], callback)](#querybymd5md5-callback)
+* [queryBySha1(sha1, [options], callback)](#querybysha1sha1-callback)
 
 #### new Rapleaf(apiKey)
 
