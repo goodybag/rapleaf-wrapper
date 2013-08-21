@@ -35,7 +35,16 @@ describe('rapleaf queries', function() {
       });
     });
   });
-
+  describe('query by email and first last name', function() {
+    it('should return result', function(done) {
+      var client = new Rapleaf(testKey);
+      client.queryByEmail('prestonp08@gmail.com', { first: 'preston', last: 'pham' }, function(error, response, body) {
+        assert(response.statusCode === 200);
+        assert(!error);
+        done();
+      });
+    });
+  });
   describe('query by md5 hashed email', function() {
     it('should return valid response', function(done) {
       var client = new Rapleaf(testKey);
